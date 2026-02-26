@@ -18,7 +18,7 @@ https://sitehub.es/curso2025-26/dam1/spotify/authors.json
 
 ## Ejercicio 04
 - a) Se pide añadir una única instancia de memoria en la feature: songs
-- b) Se pide añadir una única instancia de memoria en la feature: authors
+- b) Se pide añadir una única instancia de memoria en la feature: albums
 
 ## Ejercicio 05
 - a) Se pide crear el caso de uso que me permita guardar songs.
