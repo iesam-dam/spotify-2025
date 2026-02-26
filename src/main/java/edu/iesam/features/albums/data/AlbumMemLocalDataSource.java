@@ -8,7 +8,8 @@ public class AlbumMemLocalDataSource {
 
     private static AlbumMemLocalDataSource instance = null;
 
-    private ArrayList<Album> storage = new ArrayList<>();
+
+
 
     private AlbumMemLocalDataSource() {
         initData();
@@ -26,6 +27,10 @@ public class AlbumMemLocalDataSource {
     public void save(Album album){
         storage.add(album);
         System.out.println(album);
+    }
+
+    public void delete(String id){
+        storage.remove(id);
     }
 
     public static AlbumMemLocalDataSource newInstance(){
