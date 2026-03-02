@@ -39,6 +39,11 @@ public class SongView {
         //Para probar esta funcionalidad aconsejo ejecutar esto en el main:
         //SongView.saveSong();
         //SongView.deleteSong();
+
+        //visualizo lo que hay antes de eliminar
+        printSongs();
+
+        //Elimino
         deleteSongUseCase.execute("1");
 
         //visualizo las canciones para ver si se ha eliminado correctamente.

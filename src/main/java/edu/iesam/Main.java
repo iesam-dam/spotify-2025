@@ -8,11 +8,11 @@ import edu.iesam.features.songs.presentation.SongView;
 public class Main {
     public static void main(String[] args) {
         //SongView.printSongs();
-        //SongView.saveSong();
-        //SongView.deleteSong();
+        SongView.saveSong();
+        SongView.deleteSong();
         //AuthorView.printAuthors();
         //AlbumView.printAlbums();
         //AlbumView.saveAlbum();
-        AlbumView.deleteAlbum();
+        //AlbumView.deleteAlbum();
     }
 }
