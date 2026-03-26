@@ -6,6 +6,10 @@ import edu.iesam.features.albums.domain.AlbumRepository;
 import java.util.ArrayList;
 
 public class AlbumMockRepository implements AlbumRepository {
+
+    public Integer countSaveMethod = 0;
+    public Integer countDeleteMethod = 0;
+
     @Override
     public ArrayList<Album> getAlbums() {
         ArrayList<Album> albums = new ArrayList<>();
@@ -20,11 +24,16 @@ public class AlbumMockRepository implements AlbumRepository {
 
     @Override
     public void saveAlbum(Album album) {
-
+        countSaveMethod++;
     }
 
     @Override
     public void deleteAlbum(String id) {
+        countDeleteMethod++;
+    }
 
+    @Override
+    public Album getAlbum(String id) {
+        return new Album("1", "Name1", "2024");
     }
 }
